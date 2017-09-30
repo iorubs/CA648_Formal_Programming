@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.psFile>
+<org.eventb.core.psStatus name="inv3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="93" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="inv7/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="93" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="91" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="93" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="93" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="93" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="93" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="93" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/act1/FIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="91" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/act2/FIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="93" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="add/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="92" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="add/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="93" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="add/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="93" org.eventb.core.psManual="true"/>
+<org.eventb.core.psStatus name="add/inv7/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="93" org.eventb.core.psManual="true"/>
+<org.eventb.core.psStatus name="add/grd2/GRD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="92" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="add/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="92" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="remove/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="93" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="remove/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="93" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="remove/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="93" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="remove/grd1/GRD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="93" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="remove/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="93" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="remove/act1/SIM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="93" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="empty/act1/FIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="92" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="empty/act1/SIM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="92" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="full/act1/FIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="92" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="full/act1/SIM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="92" org.eventb.core.psManual="false"/>
+</org.eventb.core.psFile>

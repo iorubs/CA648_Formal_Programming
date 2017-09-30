@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.psFile>
+<org.eventb.core.psStatus name="inv2/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="57" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="inv3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="57" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="57" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="57" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="57" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/act2/FIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="57" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/act3/FIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="57" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/act4/FIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="57" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="register/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="70" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="register/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="70" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="register/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="70" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="deregister/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="61" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="deregister/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="61" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="deregister/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="61" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="registered/act1/FIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="63" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="vehicle/act1/FIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="64" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="owner/act1/FIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="57" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="change_register/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="67" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="change_register/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="67" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="change_register/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="67" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="drugs_check/act1/FIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="57" org.eventb.core.psManual="false"/>
+</org.eventb.core.psFile>

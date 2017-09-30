@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="60">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="37">
+<org.eventb.core.poIdentifier name="NAMES" org.eventb.core.type="ℙ(NAMES)"/>
+<org.eventb.core.poIdentifier name="maxmembers" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="maxmembert" org.eventb.core.predicate="maxmembers∈ℕ1" org.eventb.core.source="/Question2/Question2_C0.buc|org.eventb.core.contextFile#Question2_C0|org.eventb.core.axiom#("/>
+<org.eventb.core.poPredicate name="maxmemberu" org.eventb.core.predicate="maxmembers=500" org.eventb.core.source="/Question2/Question2_C0.buc|org.eventb.core.contextFile#Question2_C0|org.eventb.core.axiom#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="37">
+<org.eventb.core.poIdentifier name="member" org.eventb.core.type="ℙ(NAMES)"/>
+<org.eventb.core.poIdentifier name="num_members" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="num_waiting" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="waiting" org.eventb.core.type="ℙ(NAMES)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="inv8/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="40">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#HYPQuestion2_C7"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(member)" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#;"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#;"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#HYPQuestion2_C7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="40">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTALLHYPQuestion2_C9"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(∅ ⦂ ℙ(NAMES))" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#+"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#+"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poSequent#INITIALISATION\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#HYPQuestion2_C7|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="40">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTALLHYPQuestion2_C9"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(NAMES))∩(∅ ⦂ ℙ(NAMES))=(∅ ⦂ ℙ(NAMES))" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#."/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#."/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poSequent#INITIALISATION\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#HYPQuestion2_C7|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="40">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTALLHYPQuestion2_C9"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈ℕ" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#5"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#5"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poSequent#INITIALISATION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#HYPQuestion2_C7|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="40">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTALLHYPQuestion2_C9"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈ℕ" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#7"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#7"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poSequent#INITIALISATION\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#HYPQuestion2_C7|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="40">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTALLHYPQuestion2_C9"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(∅ ⦂ ℙ(NAMES))" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#:"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#:"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poSequent#INITIALISATION\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#HYPQuestion2_C7|org.eventb.core.poPredicate#PRD6"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="40">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTALLHYPQuestion2_C9"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="card(∅ ⦂ ℙ(NAMES))≤maxmembers" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#;"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#;"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poSequent#INITIALISATION\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTQuestion2_C9" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="39">
+<org.eventb.core.poIdentifier name="num_waiting'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="member'" org.eventb.core.type="ℙ(NAMES)"/>
+<org.eventb.core.poIdentifier name="waiting'" org.eventb.core.type="ℙ(NAMES)"/>
+<org.eventb.core.poIdentifier name="num_members'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPQuestion2_C9" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTIDENTQuestion2_C9" org.eventb.core.poStamp="39"/>
+<org.eventb.core.poSequent name="join/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="52">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTHYPQuestion2_C:'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(member)" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#\/|org.eventb.core.guard#+"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#\/|org.eventb.core.guard#+"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTHYPQuestion2_C:'"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="join/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="51">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTALLHYPQuestion2_C:"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(member∪{n})" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#+"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#\/"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#+"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poSequent#join\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#HYPQuestion2_C7|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="join/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="51">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTALLHYPQuestion2_C:"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(waiting ∖ {n})∩(member∪{n})=(∅ ⦂ ℙ(NAMES))" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#."/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#\/"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#."/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poSequent#join\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#HYPQuestion2_C7|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="join/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="51">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTALLHYPQuestion2_C:"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(waiting ∖ {n})" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#:"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#\/"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#:"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poSequent#join\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#HYPQuestion2_C7|org.eventb.core.poPredicate#PRD6"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="join/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="51">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTALLHYPQuestion2_C:"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="card(member∪{n})≤maxmembers" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#;"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#\/"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#;"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poSequent#join\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTQuestion2_C:" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="40">
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="NAMES"/>
+<org.eventb.core.poIdentifier name="member'" org.eventb.core.type="ℙ(NAMES)"/>
+<org.eventb.core.poIdentifier name="waiting'" org.eventb.core.type="ℙ(NAMES)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPQuestion2_C:'" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTIDENTQuestion2_C:" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈waiting" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#\/|org.eventb.core.guard#,"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPQuestion2_C:" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTHYPQuestion2_C:'" org.eventb.core.poStamp="51">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="card(member)&lt;maxmembers" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#\/|org.eventb.core.guard#+"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="join_queue/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="58">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTALLHYPQuestion2_C;"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(waiting∪{n})∩member=(∅ ⦂ ℙ(NAMES))" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#."/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#0"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#."/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poSequent#join_queue\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#HYPQuestion2_C7|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="join_queue/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="58">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTALLHYPQuestion2_C;"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(waiting∪{n})" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#:"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#0"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#:"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poSequent#join_queue\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#HYPQuestion2_C7|org.eventb.core.poPredicate#PRD6"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTQuestion2_C;" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="40">
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="NAMES"/>
+<org.eventb.core.poIdentifier name="waiting'" org.eventb.core.type="ℙ(NAMES)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPQuestion2_C;" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTIDENTQuestion2_C;" org.eventb.core.poStamp="58">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈NAMES ∖ (member∪waiting)" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#0|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="remove/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="51">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTALLHYPQuestion2_C="/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(member ∖ {n})" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#+"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#1"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#+"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poSequent#remove\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#HYPQuestion2_C7|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="remove/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="51">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTALLHYPQuestion2_C="/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="waiting∩(member ∖ {n})=(∅ ⦂ ℙ(NAMES))" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#."/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#1"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#."/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poSequent#remove\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#HYPQuestion2_C7|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="remove/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="51">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTALLHYPQuestion2_C="/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="card(member ∖ {n})≤maxmembers" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#;"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#1"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#;"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poSequent#remove\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTQuestion2_C=" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="40">
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="NAMES"/>
+<org.eventb.core.poIdentifier name="member'" org.eventb.core.type="ℙ(NAMES)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPQuestion2_C=" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTIDENTQuestion2_C=" org.eventb.core.poStamp="51">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈member" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#1|org.eventb.core.guard#grd1"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="remove_queue/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="51">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTALLHYPQuestion2_C&gt;"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(waiting ∖ {n})∩member=(∅ ⦂ ℙ(NAMES))" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#."/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#2"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#."/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poSequent#remove_queue\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#HYPQuestion2_C7|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="remove_queue/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="51">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTALLHYPQuestion2_C&gt;"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(waiting ∖ {n})" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#:"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#2"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#:"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poSequent#remove_queue\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#HYPQuestion2_C7|org.eventb.core.poPredicate#PRD6"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTQuestion2_C&gt;" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="40">
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="NAMES"/>
+<org.eventb.core.poIdentifier name="waiting'" org.eventb.core.type="ℙ(NAMES)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPQuestion2_C&gt;" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTIDENTQuestion2_C&gt;" org.eventb.core.poStamp="51">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈waiting" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#2|org.eventb.core.guard#grd1"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="jump_queue/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="55">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTHYPQuestion2_C?'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(member)" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#3|org.eventb.core.guard#*"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#3|org.eventb.core.guard#*"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTHYPQuestion2_C?'"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="jump_queue/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="60">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTALLHYPQuestion2_C?"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(member∪{n})" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#+"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#+"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poSequent#jump_queue\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#HYPQuestion2_C7|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="jump_queue/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="60">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTALLHYPQuestion2_C?"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="waiting∩(member∪{n})=(∅ ⦂ ℙ(NAMES))" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#."/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#."/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poSequent#jump_queue\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#HYPQuestion2_C7|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="jump_queue/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="60">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTALLHYPQuestion2_C?"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="card(member∪{n})≤maxmembers" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#;"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#;"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poSequent#jump_queue\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTQuestion2_C?" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="40">
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="NAMES"/>
+<org.eventb.core.poIdentifier name="member'" org.eventb.core.type="ℙ(NAMES)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPQuestion2_C?'" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTIDENTQuestion2_C?" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈NAMES ∖ (waiting∪member)" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#3|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPQuestion2_C?" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTHYPQuestion2_C?'" org.eventb.core.poStamp="60">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="card(member)&lt;maxmembers" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#3|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="query_membership/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="40">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTALLHYPQuestion2_C@"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="card(member)∈ℕ" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#5"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#8"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#5"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poSequent#query_membership\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#HYPQuestion2_C7|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="query_membership/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="40">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTALLHYPQuestion2_C@"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(member)" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#8|org.eventb.core.action#'"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#8|org.eventb.core.action#'"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTALLHYPQuestion2_C@"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTQuestion2_C@" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="40">
+<org.eventb.core.poIdentifier name="num_members'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPQuestion2_C@" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTIDENTQuestion2_C@" org.eventb.core.poStamp="40"/>
+<org.eventb.core.poSequent name="query_queue/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="40">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTALLHYPQuestion2_CA"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="card(waiting)∈ℕ" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#7"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#9"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#7"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poSequent#query_queue\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#HYPQuestion2_C7|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="query_queue/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="40">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTALLHYPQuestion2_CA"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(waiting)" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#9|org.eventb.core.action#'"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.event#9|org.eventb.core.action#'"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTALLHYPQuestion2_CA"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTQuestion2_CA" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="40">
+<org.eventb.core.poIdentifier name="num_waiting'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPQuestion2_CA" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#EVTIDENTQuestion2_CA" org.eventb.core.poStamp="40"/>
+<org.eventb.core.poPredicateSet name="HYPQuestion2_C7" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="member⊆NAMES" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#)"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="finite(member)" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#+"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="waiting⊆NAMES" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#-"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="waiting∩member=(∅ ⦂ ℙ(NAMES))" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#."/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="num_members∈ℕ" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#5"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="num_waiting∈ℕ" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#7"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="finite(waiting)" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#:"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Question2/Question2_M0.bpo|org.eventb.core.poFile#Question2_M0|org.eventb.core.poPredicateSet#HYPQuestion2_C7" org.eventb.core.poStamp="40">
+<org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="card(member)≤maxmembers" org.eventb.core.source="/Question2/Question2_M0.bum|org.eventb.core.machineFile#Question2_M0|org.eventb.core.invariant#;"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

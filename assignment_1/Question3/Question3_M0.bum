@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="(" org.eventb.core.assignment="permit ≔ ∅" org.eventb.core.label="act1"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="registered :∈ RESPONSE" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="vehicle :∈ VEHICLE" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="owner :∈ PERSON" org.eventb.core.label="act4"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="Question3_C0"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="+" org.eventb.core.identifier="permit"/>
+<org.eventb.core.invariant name="," org.eventb.core.label="inv1" org.eventb.core.predicate="permit ∈ PERSON ⤔ VEHICLE"/>
+<org.eventb.core.invariant name="." org.eventb.core.label="inv2" org.eventb.core.predicate="∀p·p∈dom(permit) ⇒ card(permit[{p}]) = 1"/>
+<org.eventb.core.invariant name="inv1" org.eventb.core.label="inv3" org.eventb.core.predicate="∀v·v∈ran(permit) ⇒ card(permit ▷ {v}) = 1"/>
+<org.eventb.core.event name="evt1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="register">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="p"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="v"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="p ∈ PERSON ∖ dom(permit)"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="v ∈ VEHICLE ∖ ran(permit)"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="permit ≔ permit ∪ {p ↦ v}" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt2" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="deregister">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="p"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="v"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="permit ≔ permit ∖ {p ↦ v}" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name="grd3" org.eventb.core.label="grd1" org.eventb.core.predicate="p ↦ v ∈ permit"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt3" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="registered">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="p"/>
+<org.eventb.core.guard name="grd1" org.eventb.core.label="grd1" org.eventb.core.predicate="p ∈ PERSON"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="registered :∣ (p∈dom(permit)⇒registered'=yes)∧(p∉dom(permit)⇒registered'=no)" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt4" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="vehicle">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="p"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="vehicle :∈ permit[{p}]" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd1" org.eventb.core.predicate="p ∈ dom(permit)"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt5" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="owner">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="v"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="v ∈ ran(permit)"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="owner :∈ dom(permit ▷ {v})" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt6" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="change_register">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="p"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="v"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="p ∈ dom(permit)"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="v ∈ VEHICLE ∖ ran(permit)"/>
+<org.eventb.core.action name="-" org.eventb.core.assignment="permit ≔ permit  {p ↦ v}" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt7" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="drugs_check">
+<org.eventb.core.action name="'" org.eventb.core.assignment="vehicle :∈ ran(permit)" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="ran(permit) ≠ ∅"/>
+</org.eventb.core.event>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="inv2" org.eventb.core.identifier="registered"/>
+<org.eventb.core.invariant name="inv3" org.eventb.core.label="inv4" org.eventb.core.predicate="registered ∈ RESPONSE"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="inv4" org.eventb.core.identifier="vehicle"/>
+<org.eventb.core.invariant name="inv5" org.eventb.core.label="inv5" org.eventb.core.predicate="vehicle ∈ VEHICLE"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="inv6" org.eventb.core.identifier="owner"/>
+<org.eventb.core.invariant name="inv7" org.eventb.core.label="inv6" org.eventb.core.predicate="owner ∈ PERSON"/>
+</org.eventb.core.machineFile>

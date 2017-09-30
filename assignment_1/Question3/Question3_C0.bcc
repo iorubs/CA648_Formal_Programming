@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(RESPONSE,{yes},{no})" org.eventb.core.source="/Question3/Question3_C0.buc|org.eventb.core.contextFile#Question3_C0|org.eventb.core.axiom#+" org.eventb.core.theorem="false"/>
+<org.eventb.core.scCarrierSet name="PERSON" org.eventb.core.source="/Question3/Question3_C0.buc|org.eventb.core.contextFile#Question3_C0|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(PERSON)"/>
+<org.eventb.core.scCarrierSet name="RESPONSE" org.eventb.core.source="/Question3/Question3_C0.buc|org.eventb.core.contextFile#Question3_C0|org.eventb.core.carrierSet#(" org.eventb.core.type="ℙ(RESPONSE)"/>
+<org.eventb.core.scCarrierSet name="VEHICLE" org.eventb.core.source="/Question3/Question3_C0.buc|org.eventb.core.contextFile#Question3_C0|org.eventb.core.carrierSet#," org.eventb.core.type="ℙ(VEHICLE)"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" de.prob.units.unitPragmaAttribute="" name="no" org.eventb.core.source="/Question3/Question3_C0.buc|org.eventb.core.contextFile#Question3_C0|org.eventb.core.constant#*" org.eventb.core.type="RESPONSE"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" de.prob.units.unitPragmaAttribute="" name="yes" org.eventb.core.source="/Question3/Question3_C0.buc|org.eventb.core.contextFile#Question3_C0|org.eventb.core.constant#)" org.eventb.core.type="RESPONSE"/>
+</org.eventb.core.scContextFile>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="7">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="NAMES" org.eventb.core.type="ℙ(NAMES)"/>
+<org.eventb.core.poIdentifier name="maxmembers" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Question2/Question2_C0.bpo|org.eventb.core.poFile#Question2_C0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="7">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="maxmembers∈ℕ1" org.eventb.core.source="/Question2/Question2_C0.buc|org.eventb.core.contextFile#Question2_C0|org.eventb.core.axiom#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="maxmembers=500" org.eventb.core.source="/Question2/Question2_C0.buc|org.eventb.core.contextFile#Question2_C0|org.eventb.core.axiom#)"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

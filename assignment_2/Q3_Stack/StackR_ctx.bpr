@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+<org.eventb.core.prProof name="axm3/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="ELEMENT">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with stackarr=∅" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p4">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p2"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p4" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p5" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="stackarr" org.eventb.core.type="ℙ(ℤ×ELEMENT)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="finite(∅ ⦂ ℙ(ℤ×ELEMENT))"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="stackarr=(∅ ⦂ ℙ(ℤ×ELEMENT))"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="(∅ ⦂ ℙ(ℤ×ELEMENT))∈ℕ1 ⇸ ELEMENT"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="finite(stackarr)"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="stackarr∈ℕ1 ⇸ ELEMENT"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+</org.eventb.core.prProof>
+</org.eventb.core.prFile>

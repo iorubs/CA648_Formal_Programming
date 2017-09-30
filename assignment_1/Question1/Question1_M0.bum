@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="hasread ≔ ∅" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="unread_book :∈ BOOK " org.eventb.core.label="act2"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="count ≔ 0" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="Question1_C0"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name=")" org.eventb.core.identifier="hasread"/>
+<org.eventb.core.invariant name="*" org.eventb.core.label="inv1" org.eventb.core.predicate="hasread ∈ CHILD ↔ BOOK"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="+" org.eventb.core.identifier="unread_book"/>
+<org.eventb.core.invariant name="," org.eventb.core.label="inv2" org.eventb.core.predicate="unread_book ∈ BOOK"/>
+<org.eventb.core.event name="-" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="record">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="c"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="b"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="c ∈ CHILD"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="b ∈ BOOK"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="hasread ≔ hasread ∪ {c ↦ b}" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="." org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="newbook">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="c"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="c ∈ CHILD"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="unread_book :∈ BOOK ∖ hasread[{c}]" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd2" org.eventb.core.predicate="BOOK ∖ hasread[{c}] ≠ ∅"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="/" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="books_query">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="c"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="count ≔ card(hasread[{c}])" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd1" org.eventb.core.predicate="c ∈ CHILD"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="finite(hasread[{c}])"/>
+</org.eventb.core.event>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="0" org.eventb.core.identifier="count"/>
+<org.eventb.core.invariant name="1" org.eventb.core.label="inv3" org.eventb.core.predicate="count ∈ ℕ"/>
+</org.eventb.core.machineFile>

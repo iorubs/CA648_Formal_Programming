@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase">
+<org.eventb.core.scCarrierSet name="BOOK" org.eventb.core.source="/Question1/Question1_C0.buc|org.eventb.core.contextFile#Question1_C0|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(BOOK)"/>
+<org.eventb.core.scCarrierSet name="CHILD" org.eventb.core.source="/Question1/Question1_C0.buc|org.eventb.core.contextFile#Question1_C0|org.eventb.core.carrierSet#(" org.eventb.core.type="ℙ(CHILD)"/>
+</org.eventb.core.scContextFile>

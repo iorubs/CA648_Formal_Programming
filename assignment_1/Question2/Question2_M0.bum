@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="member ≔ ∅" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="waiting ≔ ∅" org.eventb.core.label="act2"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="num_members ≔ 0" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="num_waiting ≔ 0" org.eventb.core.label="act4"/>
+</org.eventb.core.event>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="(" org.eventb.core.identifier="member"/>
+<org.eventb.core.invariant name=")" org.eventb.core.label="inv1" org.eventb.core.predicate="member ⊆ NAMES"/>
+<org.eventb.core.seesContext name="*" org.eventb.core.target="Question2_C0"/>
+<org.eventb.core.invariant name="+" org.eventb.core.label="inv2" org.eventb.core.predicate="finite(member)"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="," org.eventb.core.identifier="waiting"/>
+<org.eventb.core.invariant name="-" org.eventb.core.label="inv3" org.eventb.core.predicate="waiting ⊆ NAMES"/>
+<org.eventb.core.invariant name="." org.eventb.core.label="inv4" org.eventb.core.predicate="waiting ∩ member = ∅"/>
+<org.eventb.core.event name="/" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="join">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="n"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="waiting ≔ waiting ∖ {n}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="member ≔ member ∪ {n}" org.eventb.core.label="act2"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd1" org.eventb.core.predicate="n ∈ waiting"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd2" org.eventb.core.predicate="card(member) &lt; maxmembers"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="0" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="join_queue">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="n"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="n ∈ NAMES ∖ (member ∪ waiting)"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="waiting ≔ waiting ∪ {n}" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="remove">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="n"/>
+<org.eventb.core.guard name="grd1" org.eventb.core.label="grd1" org.eventb.core.predicate="n ∈ member"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="member ≔ member ∖ {n}" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="2" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="remove_queue">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="n"/>
+<org.eventb.core.guard name="grd1" org.eventb.core.label="grd1" org.eventb.core.predicate="n ∈ waiting"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="waiting ≔ waiting ∖ {n}" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="3" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="jump_queue">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="n"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="n ∈ NAMES ∖ (waiting ∪ member)"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="card(member) &lt; maxmembers"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="member ≔ member ∪ {n}" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="4" org.eventb.core.identifier="num_members"/>
+<org.eventb.core.invariant name="5" org.eventb.core.label="inv5" org.eventb.core.predicate="num_members ∈ ℕ"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="6" org.eventb.core.identifier="num_waiting"/>
+<org.eventb.core.invariant name="7" org.eventb.core.label="inv6" org.eventb.core.predicate="num_waiting ∈ ℕ"/>
+<org.eventb.core.event name="8" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="query_membership">
+<org.eventb.core.action name="'" org.eventb.core.assignment="num_members ≔ card(member)" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="9" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="query_queue">
+<org.eventb.core.action name="'" org.eventb.core.assignment="num_waiting ≔ card(waiting)" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.invariant name=":" org.eventb.core.label="inv7" org.eventb.core.predicate="finite(waiting)"/>
+<org.eventb.core.invariant name=";" org.eventb.core.label="inv8" org.eventb.core.predicate="card(member) ≤ maxmembers"/>
+</org.eventb.core.machineFile>

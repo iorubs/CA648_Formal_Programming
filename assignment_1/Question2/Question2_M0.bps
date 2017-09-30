@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.psFile>
+<org.eventb.core.psStatus name="inv8/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="40" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="40" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="40" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="40" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="40" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="40" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="40" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="join/grd2/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="join/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="51" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="join/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="51" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="join/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="51" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="join/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="51" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="join_queue/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="58" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="join_queue/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="58" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="remove/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="51" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="remove/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="51" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="remove/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="51" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="remove_queue/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="51" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="remove_queue/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="51" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="jump_queue/grd2/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="55" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="jump_queue/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="60" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="jump_queue/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="60" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="jump_queue/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="60" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="query_membership/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="40" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="query_membership/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="40" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="query_queue/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="40" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="query_queue/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="40" org.eventb.core.psManual="false"/>
+</org.eventb.core.psFile>
